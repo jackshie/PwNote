@@ -94,15 +94,22 @@
     <h3>3.2 Restoring from an encrypted backup</h3>
     <ol>
       <li>Install PwNote on the device where you want to restore your data.</li>
-      <li>Open PwNote and follow the initial setup if required.</li>
+      <li>Open PwNote and complete the initial setup, including setting your current Master Password.</li>
       <li>Go to the <strong>Import / Restore</strong> section in Settings.</li>
       <li>Select the encrypted backup file from the Files app.</li>
-      <li>Enter your Master Password used when the backup was created (if prompted) and complete the restore.</li>
+      <li>
+        PwNote will automatically try to decrypt the backup using your
+        <strong>current Master Password</strong>. If the Master Password is
+        different from the one that was used when the backup was created,
+        the restore will fail and the data cannot be loaded.
+      </li>
     </ol>
-
     <div class="note">
-      <strong>Tip:</strong> Keep multiple copies of your encrypted backup (for example, iCloud Drive + local storage)
-      and regularly update it after making important changes to your vault.
+      <strong>Important:</strong> To successfully restore an encrypted backup,
+      your current Master Password in PwNote must be the same as the Master
+      Password that was used when the backup was exported. If you have changed
+      your Master Password since creating the backup, you will need to change
+      it back before restoring.
     </div>
 
     <h2>4. Pro Purchase and Restore Purchases</h2>
